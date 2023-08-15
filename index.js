@@ -19,7 +19,7 @@ const PORT = 4000;
 
 app.use("/api/v1", UserRouters);
 app.use("/", (req, res) => {
-  res.send("All is Hello Well ");
+  res.send({ message: "All is Hello Well " });
 });
 
 dbConnect();
